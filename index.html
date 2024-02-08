@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Simple Dashboard</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const popupLinks = document.querySelectorAll(".popup-link");
+      const popupMenu = document.getElementById("popup-menu");
+
+      popupLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          popupMenu.classList.toggle("show"); // Toggle the visibility of the pop-up menu
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+    <div id="sidebar">
+      <a href="#">Dashboard</a>
+      <a href="#" class="popup-link">Categories</a>
+      <a href="#" class="popup-link">Statistics</a>
+      <a href="#" class="popup-link">Orders</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <div id="popup-menu" class="popup-menu">
+      <a href="#">Item 1</a>
+      <a href="#">Item 2</a>
+      <a href="#">Item 3</a>
+      <!-- Add more items as needed -->
+    </div>
+
+    <div id="main-content">
+      <div id="elements">
+        <div class="element">
+          <div class="pic"></div>
+          <div class="content">
+            <span>Explore Now<i class="ri-arrow-right-line"></i></span>
+            <!-- <h3>Personal Parties<br />EX1</h3> -->
+          </div>
+        </div>
+        <div class="element">
+          <div class="pic"></div>
+          <div class="content">
+            <span>Explore Now<i class="ri-arrow-right-line"></i></span>
+            <!-- <h3>Personal Ceremony<br />EX1</h3> -->
+          </div>
+        </div>
+        <div class="element">
+          <div class="pic"></div>
+          <div class="content">
+            <span>Explore Now<i class="ri-arrow-right-line"></i></span>
+            <!-- <h3>Corporate Parties<br />EX1</h3> -->
+          </div>
+        </div>
+        <div class="element">
+          <div class="pic"></div>
+          <div class="content">
+            <span>Explore Now<i class="ri-arrow-right-line"></i></span>
+            <!-- <h3>Corporate Celebrations <br />EX1</h3> -->
+          </div>
+        </div>
+        <div class="element">
+          <div class="pic"></div>
+          <div class="content">
+            <span>Explore Now<i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item ID</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Item 1</td>
+            <td>10</td>
+            <td>$20.00</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Item 2</td>
+            <td>5</td>
+            <td>$15.00</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+    
+  </body>
+</html>

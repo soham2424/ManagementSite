@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+#sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+#sidebar a:hover {
+  background-color: #555;
+}
+
+.popup-menu {
+  position: absolute;
+  top: 0;
+  left: -250px; /* Hide the menu initially */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding-top: 20px;
+  transition: left 0.3s ease;
+}
+
+.popup-menu a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.popup-menu a:hover {
+  background-color: #555;
+}
+
+#main-content {
+  margin-left: 250px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        } */
+
+#elements {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#elements .element {
+  width: calc(17% - 20px); /* Adjusted width with margin */
+  margin: 10px; /* Added margin for spacing between elements */
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+#elements .element:hover .pic {
+  transform: scale(
+    1.1
+  ); /* Adjust the scale factor for the desired zoom effect */
+}
+.element .pic {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+#elements .element:nth-child(1) .pic {
+  background-image: url(https://zillya.com/sites/default/files/under-construction.png);
+}
+#elements .element:nth-child(2) .pic {
+  background-image: url(https://zillya.com/sites/default/files/under-construction.png);
+}
+#elements .element:nth-child(3) .pic {
+  background-image: url(https://zillya.com/sites/default/files/under-construction.png);
+}
+#elements .element:nth-child(4) .pic {
+  background-image: url(https://zillya.com/sites/default/files/under-construction.png);
+}
+#elements .element:nth-child(5) .pic {
+  background-image: url(https://zillya.com/sites/default/files/under-construction.png);
+}
+
+.element .content {
+  overflow: hidden;
+  padding: 20px;
+}
+.element .content h3 {
+  margin-top: 10px;
+  color: rgb(34, 34, 34);
+}
+
+.element .content span {
+  font-size: 15px;
+  display: flex;
+  align-items: centre;
+}
+i {
+  margin-left: 5px;
+  transform: rotate(-25deg);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
